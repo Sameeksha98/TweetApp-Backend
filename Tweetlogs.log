@@ -1,0 +1,377 @@
+2022-06-12 21:05:47.778  INFO 18580 --- [restartedMain] com.tweetapp.api.TweetApplication        : Starting TweetApplication using Java 11.0.14 on LTIN319439 with PID 18580 (C:\Users\895240\Downloads\TweetAppBackend-main\TweetAppBackend-main\target\classes started by 895240 in C:\Users\895240\Downloads\TweetAppBackend-main\TweetAppBackend-main)
+2022-06-12 21:05:47.780 DEBUG 18580 --- [restartedMain] com.tweetapp.api.TweetApplication        : Running with Spring Boot v2.4.5, Spring v5.3.6
+2022-06-12 21:05:47.781  INFO 18580 --- [restartedMain] com.tweetapp.api.TweetApplication        : No active profile set, falling back to default profiles: default
+2022-06-12 21:05:47.867  INFO 18580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-12 21:05:47.868  INFO 18580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-12 21:05:49.848  INFO 18580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-12 21:05:49.937  INFO 18580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 2 MongoDB repository interfaces.
+2022-06-12 21:05:51.164  INFO 18580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-06-12 21:05:51.187  INFO 18580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-12 21:05:51.188  INFO 18580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-06-12 21:05:51.334  INFO 18580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-12 21:05:51.334  INFO 18580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3465 ms
+2022-06-12 21:05:51.726 DEBUG 18580 --- [restartedMain] WTFilter$$EnhancerBySpringCGLIB$$a7e7e61 : Filter 'JWTFilter' configured for use
+2022-06-12 21:05:51.908  INFO 18580 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-06-12 21:05:52.012  INFO 18580 --- [cluster-rtt-ClusterId{value='62a607d7752175452ac7cf0c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:47}] to localhost:27017
+2022-06-12 21:05:52.013  INFO 18580 --- [cluster-ClusterId{value='62a607d7752175452ac7cf0c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:46}] to localhost:27017
+2022-06-12 21:05:52.015  INFO 18580 --- [cluster-ClusterId{value='62a607d7752175452ac7cf0c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=36800200}
+2022-06-12 21:05:52.201  INFO 18580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-12 21:05:53.587  INFO 18580 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2022-06-12 21:05:53.859  INFO 18580 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-12 21:05:54.455  INFO 18580 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-12 21:05:54.712  INFO 18580 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-12 21:05:54.718  INFO 18580 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-12 21:05:54.719  INFO 18580 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1655048154708
+2022-06-12 21:05:54.775  INFO 18580 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): TweetMessage
+2022-06-12 21:05:54.787  INFO 18580 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-06-12 21:05:54.829  INFO 18580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-06-12 21:05:54.831  INFO 18580 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-12 21:05:54.869  INFO 18580 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-12 21:05:54.891  INFO 18580 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-12 21:05:55.247  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-06-12 21:05:55.254  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2022-06-12 21:05:55.263  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2022-06-12 21:05:55.270  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2022-06-12 21:05:55.277  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2022-06-12 21:05:55.282  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2022-06-12 21:05:55.288  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2022-06-12 21:05:55.292  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2022-06-12 21:05:55.296  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2022-06-12 21:05:55.302  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2022-06-12 21:05:55.306  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2022-06-12 21:05:55.310  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2022-06-12 21:05:55.314  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2022-06-12 21:05:55.323  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2022-06-12 21:05:55.327  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2022-06-12 21:05:55.330  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2022-06-12 21:05:55.335  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2022-06-12 21:05:55.342  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2022-06-12 21:05:55.348  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2022-06-12 21:05:55.355  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2022-06-12 21:05:55.360  INFO 18580 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2022-06-12 21:05:55.626  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: h-u2P9VDSz-Qo5-3D_FdwQ
+2022-06-12 21:05:55.629  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator LTIN319439.cts.com:9092 (id: 2147483647 rack: null)
+2022-06-12 21:05:55.635  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-06-12 21:05:55.662  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2022-06-12 21:05:55.662  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-06-12 21:05:55.675  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 5: {consumer-group_id-1-f07cdebd-c7b8-4e9c-b69a-d0a50b2f3bde=Assignment(partitions=[TweetMessage-0])}
+2022-06-12 21:05:55.685  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 5
+2022-06-12 21:05:55.687  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[TweetMessage-0])
+2022-06-12 21:05:55.688  INFO 18580 --- [restartedMain] com.tweetapp.api.TweetApplication        : Started TweetApplication in 8.661 seconds (JVM running for 9.54)
+2022-06-12 21:05:55.692  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: TweetMessage-0
+2022-06-12 21:05:55.705  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition TweetMessage-0 to the committed offset FetchPosition{offset=15, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[LTIN319439.cts.com:9092 (id: 0 rack: null)], epoch=0}}
+2022-06-12 21:05:55.707  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [TweetMessage-0]
+2022-06-12 21:06:23.989  INFO 18580 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 21:06:23.989  INFO 18580 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-12 21:06:23.991  INFO 18580 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-12 21:06:37.890 DEBUG 18580 --- [http-nio-8090-exec-3] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-12 21:06:37.891 DEBUG 18580 --- [http-nio-8090-exec-3] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-12 21:06:37.962  INFO 18580 --- [http-nio-8090-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:48}] to localhost:27017
+2022-06-12 21:06:38.027  INFO 18580 --- [http-nio-8090-exec-3] c.tweetapp.api.service.UserServiceImpl   : Bala--Logged in Successfully..!
+2022-06-12 21:06:38.202  WARN 18580 --- [http-nio-8090-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [169] milliseconds.
+2022-06-12 21:06:38.309  INFO 18580 --- [http-nio-8090-exec-5] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:06:38.311  INFO 18580 --- [http-nio-8090-exec-5] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:06:38.324  INFO 18580 --- [http-nio-8090-exec-5] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2022-06-12 21:06:38.364  INFO 18580 --- [http-nio-8090-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2022-06-12 21:06:38.364  INFO 18580 --- [http-nio-8090-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2022-06-12 21:06:38.364  INFO 18580 --- [http-nio-8090-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1655048198363
+2022-06-12 21:06:38.375  INFO 18580 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: h-u2P9VDSz-Qo5-3D_FdwQ
+2022-06-12 21:06:38.425  INFO 18580 --- [http-nio-8090-exec-5] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:06:38.476  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:06:38.477  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:07:09.509  INFO 18580 --- [http-nio-8090-exec-7] c.t.api.controller.TweetAppController    : Tweet successfully posted by the user
+2022-06-12 21:07:09.514  INFO 18580 --- [http-nio-8090-exec-7] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:07:09.515  INFO 18580 --- [http-nio-8090-exec-7] c.tweetapp.api.service.TweetServiceImpl  : Tweet posted by user: Bala
+2022-06-12 21:07:09.522  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet posted by the user : Bala
+2022-06-12 21:07:09.522  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet posted by the user : Bala
+2022-06-12 21:07:09.667  INFO 18580 --- [http-nio-8090-exec-9] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:07:09.667  INFO 18580 --- [http-nio-8090-exec-9] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:07:09.669  INFO 18580 --- [http-nio-8090-exec-9] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:07:09.683  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:07:09.684  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:08:43.035 DEBUG 18580 --- [http-nio-8090-exec-4] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-12 21:08:43.035 DEBUG 18580 --- [http-nio-8090-exec-4] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-12 21:08:43.039  INFO 18580 --- [http-nio-8090-exec-4] c.tweetapp.api.service.UserServiceImpl   : Bala--Logged in Successfully..!
+2022-06-12 21:08:43.081  INFO 18580 --- [http-nio-8090-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:08:43.082  INFO 18580 --- [http-nio-8090-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:08:43.083  INFO 18580 --- [http-nio-8090-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:08:43.092  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:08:43.092  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:08:52.943  INFO 18580 --- [http-nio-8090-exec-8] c.t.api.controller.TweetAppController    : Tweet successfully posted by the user
+2022-06-12 21:08:52.945  INFO 18580 --- [http-nio-8090-exec-8] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:08:52.946  INFO 18580 --- [http-nio-8090-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Tweet posted by user: Bala
+2022-06-12 21:08:52.954  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet posted by the user : Bala
+2022-06-12 21:08:52.955  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet posted by the user : Bala
+2022-06-12 21:08:52.972  INFO 18580 --- [http-nio-8090-exec-10] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:08:52.972  INFO 18580 --- [http-nio-8090-exec-10] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:08:52.973  INFO 18580 --- [http-nio-8090-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:08:52.980  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:08:52.980  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:09:14.706  INFO 18580 --- [http-nio-8090-exec-1] c.t.api.controller.TweetAppController    : Tweet successfully posted by the user
+2022-06-12 21:09:14.709  INFO 18580 --- [http-nio-8090-exec-1] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:09:14.709  INFO 18580 --- [http-nio-8090-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Tweet posted by user: Bala
+2022-06-12 21:09:14.715  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet posted by the user : Bala
+2022-06-12 21:09:14.716  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet posted by the user : Bala
+2022-06-12 21:09:14.731  INFO 18580 --- [http-nio-8090-exec-4] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:09:14.731  INFO 18580 --- [http-nio-8090-exec-4] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:09:14.732  INFO 18580 --- [http-nio-8090-exec-4] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:09:14.740  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:09:14.740  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:09:49.616  INFO 18580 --- [http-nio-8090-exec-6] c.t.api.controller.TweetAppController    : Tweet successfully updated by the user
+2022-06-12 21:09:49.616  INFO 18580 --- [http-nio-8090-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:09:49.617  INFO 18580 --- [http-nio-8090-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Tweet is updated successfully...
+2022-06-12 21:09:49.624  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet is updated..
+2022-06-12 21:09:49.625  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet is updated..
+2022-06-12 21:09:49.646  INFO 18580 --- [http-nio-8090-exec-8] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:09:49.646  INFO 18580 --- [http-nio-8090-exec-8] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:09:49.647  INFO 18580 --- [http-nio-8090-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:09:49.657  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:09:49.658  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:09:59.917  INFO 18580 --- [http-nio-8090-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Liked Tweet with Id: 62a6088c752175452ac7cf0e is Tweet [id=62a6088c752175452ac7cf0e, tweet=tweet edit, postDate=2022-06-12T21:08:52.947, likes=0, user=User [id=62a5b283752175452ac7cf10, username=Bala, password=Bala@123, email=bala@gmail.com, firstName=Bala, lastName=Murali, contactNumber=9823654678], replies=[]]
+2022-06-12 21:09:59.921  INFO 18580 --- [http-nio-8090-exec-10] c.t.api.controller.TweetAppController    : Like a tweet 
+2022-06-12 21:09:59.941  INFO 18580 --- [http-nio-8090-exec-1] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:09:59.942  INFO 18580 --- [http-nio-8090-exec-1] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:09:59.943  INFO 18580 --- [http-nio-8090-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:09:59.953  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:09:59.953  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:10:23.539  INFO 18580 --- [http-nio-8090-exec-4] c.t.api.controller.TweetAppController    : Replying to the tweet by user
+2022-06-12 21:10:23.562  INFO 18580 --- [http-nio-8090-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:10:23.563  INFO 18580 --- [http-nio-8090-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:10:23.563  INFO 18580 --- [http-nio-8090-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:10:23.570  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:10:23.571  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:10:51.000  INFO 18580 --- [http-nio-8090-exec-8] c.t.api.controller.TweetAppController    : Replying to the tweet by user
+2022-06-12 21:10:51.045  INFO 18580 --- [http-nio-8090-exec-10] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:10:51.046  INFO 18580 --- [http-nio-8090-exec-10] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:10:51.047  INFO 18580 --- [http-nio-8090-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:10:51.065  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:10:51.066  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:10:56.692  INFO 18580 --- [http-nio-8090-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Deleted thw tweet for the tweet id62a6088c752175452ac7cf0e
+2022-06-12 21:10:56.693  INFO 18580 --- [http-nio-8090-exec-1] c.t.api.controller.TweetAppController    : Tweet deleted by the user
+2022-06-12 21:10:56.710  INFO 18580 --- [http-nio-8090-exec-4] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:10:56.711  INFO 18580 --- [http-nio-8090-exec-4] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:10:56.712  INFO 18580 --- [http-nio-8090-exec-4] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:10:56.723  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:10:56.724  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:11:19.351  INFO 18580 --- [http-nio-8090-exec-6] c.t.api.controller.TweetAppController    : Request to reset the password
+2022-06-12 21:11:19.402  INFO 18580 --- [http-nio-8090-exec-6] c.tweetapp.api.service.UserServiceImpl   : Reset password successful..
+2022-06-12 21:11:31.003 DEBUG 18580 --- [http-nio-8090-exec-8] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-12 21:11:31.004 DEBUG 18580 --- [http-nio-8090-exec-8] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-12 21:11:31.009  INFO 18580 --- [http-nio-8090-exec-8] c.tweetapp.api.service.UserServiceImpl   : Bala--Logged in Successfully..!
+2022-06-12 21:11:31.054  INFO 18580 --- [http-nio-8090-exec-10] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:11:31.055  INFO 18580 --- [http-nio-8090-exec-10] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:11:31.056  INFO 18580 --- [http-nio-8090-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:11:31.066  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:11:31.067  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:11:35.807  INFO 18580 --- [http-nio-8090-exec-1] c.t.api.controller.TweetAppController    : Retrived all the users
+2022-06-12 21:11:35.808  INFO 18580 --- [http-nio-8090-exec-1] c.tweetapp.api.service.UserServiceImpl   : Retriving all the users
+2022-06-12 21:11:42.434  INFO 18580 --- [http-nio-8090-exec-4] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:11:42.435  INFO 18580 --- [http-nio-8090-exec-4] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:11:42.436  INFO 18580 --- [http-nio-8090-exec-4] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:11:42.447  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:11:42.447  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:11:45.394  INFO 18580 --- [http-nio-8090-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:11:45.395  INFO 18580 --- [http-nio-8090-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:11:45.395  INFO 18580 --- [http-nio-8090-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:11:45.405  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:11:45.406  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:11:50.220  INFO 18580 --- [http-nio-8090-exec-8] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:11:50.222  INFO 18580 --- [http-nio-8090-exec-8] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:11:50.222  INFO 18580 --- [http-nio-8090-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:11:50.229  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:11:50.230  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:12:04.929 DEBUG 18580 --- [http-nio-8090-exec-10] c.t.api.controller.TweetAppController    : ----Inside TweetAppController-> loginUser()------
+2022-06-12 21:12:04.929 DEBUG 18580 --- [http-nio-8090-exec-10] c.tweetapp.api.service.UserServiceImpl   : ---Inside User Service-> loginUser()---
+2022-06-12 21:12:04.934  INFO 18580 --- [http-nio-8090-exec-10] c.tweetapp.api.service.UserServiceImpl   : Sameeksha--Logged in Successfully..!
+2022-06-12 21:12:04.971  INFO 18580 --- [http-nio-8090-exec-1] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:12:04.971  INFO 18580 --- [http-nio-8090-exec-1] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:04.972  INFO 18580 --- [http-nio-8090-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:12:04.981  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:12:04.981  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:12:16.447  INFO 18580 --- [http-nio-8090-exec-4] c.t.api.controller.TweetAppController    : Tweet successfully posted by the user
+2022-06-12 21:12:16.452  INFO 18580 --- [http-nio-8090-exec-4] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:16.453  INFO 18580 --- [http-nio-8090-exec-4] c.tweetapp.api.service.TweetServiceImpl  : Tweet posted by user: Sameeksha
+2022-06-12 21:12:16.464  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Tweet posted by the user : Sameeksha
+2022-06-12 21:12:16.464  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Tweet posted by the user : Sameeksha
+2022-06-12 21:12:16.483  INFO 18580 --- [http-nio-8090-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:12:16.484  INFO 18580 --- [http-nio-8090-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:16.485  INFO 18580 --- [http-nio-8090-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:12:16.495  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:12:16.495  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:12:22.977  INFO 18580 --- [http-nio-8090-exec-8] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:12:22.978  INFO 18580 --- [http-nio-8090-exec-8] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:22.979  INFO 18580 --- [http-nio-8090-exec-8] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:12:22.987  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:12:22.989  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:12:25.928  INFO 18580 --- [http-nio-8090-exec-10] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:12:25.929  INFO 18580 --- [http-nio-8090-exec-10] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:25.929  INFO 18580 --- [http-nio-8090-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:12:25.939  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:12:25.940  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:12:29.109  INFO 18580 --- [http-nio-8090-exec-1] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:12:29.110  INFO 18580 --- [http-nio-8090-exec-1] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:29.111  INFO 18580 --- [http-nio-8090-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:12:29.120  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:12:29.121  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:12:30.583  INFO 18580 --- [http-nio-8090-exec-4] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:12:30.583  INFO 18580 --- [http-nio-8090-exec-4] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:30.584  INFO 18580 --- [http-nio-8090-exec-4] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:12:30.594  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:12:30.595  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:12:38.290  INFO 18580 --- [http-nio-8090-exec-6] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:12:38.291  INFO 18580 --- [http-nio-8090-exec-6] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:38.292  INFO 18580 --- [http-nio-8090-exec-6] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:12:38.301  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:12:38.302  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:12:38.978  INFO 18580 --- [http-nio-8090-exec-8] c.t.api.controller.TweetAppController    : Retrived all the users
+2022-06-12 21:12:38.979  INFO 18580 --- [http-nio-8090-exec-8] c.tweetapp.api.service.UserServiceImpl   : Retriving all the users
+2022-06-12 21:12:50.986  INFO 18580 --- [http-nio-8090-exec-10] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:12:50.987  INFO 18580 --- [http-nio-8090-exec-10] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:12:50.987  INFO 18580 --- [http-nio-8090-exec-10] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:12:50.996  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:12:50.997  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
+2022-06-12 21:13:07.984  INFO 18580 --- [http-nio-8090-exec-1] c.t.api.controller.TweetAppController    : Retreive all the tweets by the all users
+2022-06-12 21:13:07.985  INFO 18580 --- [http-nio-8090-exec-1] com.tweetapp.api.kafka.ProducerService   : Publishing to topic TweetMessage
+2022-06-12 21:13:07.986  INFO 18580 --- [http-nio-8090-exec-1] c.tweetapp.api.service.TweetServiceImpl  : Retriving all the tweet data
+2022-06-12 21:13:07.995  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message Received request to send all tweet data.
+2022-06-12 21:13:07.995  INFO 18580 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.tweetapp.api.kafka.ConsumerService   : Consumed message: Received request to send all tweet data.
